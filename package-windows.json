@@ -1,18 +1,19 @@
 {
-  "name": "shortly-express",
+  "name": "shortly-deploy",
   "version": "0.0.1",
-  "description": "shortly using express",
-  "main": "index.js",
+  "description": "Learn all about deployment",
+  "main": "server.js",
   "repository": "",
   "license": "Proprietary",
   "private": true,
   "scripts": {
-    "start": "node index.js"
+    "start": "./node_modules/.bin/nodemon --ignore node_modules server.js",
+    "test": "./node_modules/.bin/mocha --bail --reporter nyan test/ServerSpec.js"
   },
   "dependencies": {
-    "knex": "~0.5.7",
-    "bookshelf": "~0.6.4",
-    "sqlite3": "~3.0.5",
+    "knex": "~0.6.10",
+    "bookshelf": "~0.7.1",
+    "sqlite3": "~3.1.0",
     "express": "~3.4.8",
     "express-partials": "~0.2.0",
     "ejs": "~0.8.5",
