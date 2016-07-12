@@ -15,9 +15,9 @@ module.exports = function(grunt) {
     mochaTest: {
       test: {
         options: {
-          reporter: 'spec'
+          reporter: 'spec',
         },
-        src: ['test/**/*.js'],
+        src: ['test/**/*.js']
       }
     },
 
@@ -84,8 +84,8 @@ module.exports = function(grunt) {
       },
       css: {
         files: 'public/*.css',
-        tasks: ['cssmin'],
-      },
+        tasks: ['cssmin']
+      }
     },
 
     shell: {
@@ -151,6 +151,6 @@ module.exports = function(grunt) {
       'test',
       'build',
       'upload'
-    ]);
+  ]);
 
 };
